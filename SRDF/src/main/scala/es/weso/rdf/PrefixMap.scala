@@ -27,7 +27,7 @@ case class PrefixMap(pm: Map[String, IRI]) {
 
   override def toString: String = {
     def cnv(pair: (String, IRI)): String = {
-      pair._1 + ": <" + pair._2 + ">\n"
+      pair._1 + ": " + pair._2 + "\n"
     }
     pm.map(cnv).mkString("\n")
   }

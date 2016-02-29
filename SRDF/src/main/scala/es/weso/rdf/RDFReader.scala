@@ -90,10 +90,10 @@ trait RDFReader {
     triplesWithSubject(s).filter(t => t.hasPredicate(p))
   }
 
-  def hasPredicateWithSubject(n: RDFNode, p: IRI, rdf: RDFReader): Boolean = {
-    rdf.triplesWithSubjectPredicate(n, p).size > 0
+  def hasPredicateWithSubject(n: RDFNode, p: IRI): Boolean = {
+    triplesWithSubjectPredicate(n, p).size > 0
   }
-
+  
   /**
    * Prefix map
    */

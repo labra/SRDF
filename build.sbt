@@ -3,17 +3,17 @@ import sbt.Keys._
 import ScoverageSbtPlugin._
 
 lazy val root = project.in(file(".")).
-  aggregate(SRDFJS, SRDFJVM).
+  aggregate(srdfJS, srdfJVM).
   settings(
     publish := {},
     publishLocal := {}
   )
 
-lazy val SRDF = crossProject.
+lazy val srdf = crossProject.
   crossType(CrossType.Pure).
   settings(
-    name := "SRDF",
-    version := "0.0.1",
+    name := "srdf",
+    version := "0.0.3",
     scalaVersion := "2.11.7", 
     organization := "es.weso",
 	libraryDependencies ++= Seq(
@@ -21,18 +21,20 @@ lazy val SRDF = crossProject.
 	)
   ).
   jvmSettings(
+    name := name.value + "-jvm",
 	libraryDependencies ++= Seq(
     ),
 	licenses += ("MPL-2.0", url("http://opensource.org/licenses/MPL-2.0"))
   ).
   jsSettings(
+    name := name.value + "-js",
 	libraryDependencies ++= Seq(
     ),
 	licenses += ("MPL-2.0", url("http://opensource.org/licenses/MPL-2.0"))
   )
   
-lazy val SRDFJVM = SRDF.jvm
-lazy val SRDFJS = SRDF.js  
+lazy val srdfJVM = srdf.jvm
+lazy val srdfJS = srdf.js  
 	 
 publishMavenStyle := true
 
@@ -53,4 +55,7 @@ site.publishSite
 
 site.includeScaladoc()
 
+ghpages.settings
+
+git.remoteRepo := "git@github.com:labra/SRDF.git"
 
