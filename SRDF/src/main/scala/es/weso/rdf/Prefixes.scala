@@ -1,7 +1,10 @@
 package es.weso.rdf
 
-import es.weso.rdfgraph.nodes.IRI
+import es.weso.rdf.nodes.IRI
 
+/**
+ * Common Prefixes for RDF
+ */
 object PREFIXES {
 
   lazy val xsd = IRI("http://www.w3.org/2001/XMLSchema#")

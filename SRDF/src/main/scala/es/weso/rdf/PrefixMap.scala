@@ -1,14 +1,23 @@
 package es.weso.rdf
 
-import es.weso.rdfgraph.nodes._
+import es.weso.rdf.nodes._
 import scala.collection.immutable.Map
 
+/**
+ * PrefixMap for RDF
+ */
 case class PrefixMap(pm: Map[String, IRI]) {
 
+  /**
+   * Given an alias, return the IRI associated with the alias
+   */
   def getIRI(prefix: String): Option[IRI] = {
     pm.get(prefix)
   }
 
+  /**
+   * Qualify a string 
+   */
   def qname(str: String): Option[IRI] = {
     str.indexOf(":") match {
       case (-1) => Some(IRI(str))

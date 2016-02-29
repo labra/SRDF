@@ -1,4 +1,4 @@
-package es.weso.rdfgraph.nodes
+package es.weso.rdf.nodes
 
 trait Literal extends RDFNode {
   def dataType: IRI

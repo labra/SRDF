@@ -1,11 +1,14 @@
 package es.weso.rdf
 
-import es.weso.rdfgraph.statements._
-import scala.util.Try
-import es.weso.rdfgraph.nodes.IRI
-import es.weso.rdfgraph.nodes.RDFNode
+import es.weso.rdf.triples._
+import es.weso.rdf.nodes._
 import es.weso.rdf.PREFIXES._
+import scala.util.Try
 
+/**
+ * RDFReader can get read RDF data from several sources
+ * At this moment, it can parse RDF from <code>CharSequence</code>
+ */
 trait RDFReader {
 
   type Rdf <: RDFReader

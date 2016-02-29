@@ -1,4 +1,4 @@
-package es.weso.rdfgraph.nodes
+package es.weso.rdf.nodes
 
 import java.net.{ URISyntaxException, URI }
 

@@ -1,7 +1,7 @@
 package es.weso.rdf
 
 import org.scalatest._
-import es.weso.rdfgraph.nodes._
+import es.weso.rdf.nodes._
 
 class PrefixesTest extends FunSpec with Matchers with TryValues {
 

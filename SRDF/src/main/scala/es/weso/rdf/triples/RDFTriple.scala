@@ -1,7 +1,7 @@
-package es.weso.rdfgraph.statements
+package es.weso.rdf.triples
 
 import scala.collection.Set
-import es.weso.rdfgraph.nodes._
+import es.weso.rdf.nodes._
 
 case class RDFTriple(subj: RDFNode, pred: IRI, obj: RDFNode) {
 

@@ -13,11 +13,11 @@ lazy val srdf = crossProject.
   crossType(CrossType.Pure).
   settings(
     name := "srdf",
-    version := "0.0.3",
+    version := "0.0.4",
     scalaVersion := "2.11.7", 
     organization := "es.weso",
 	libraryDependencies ++= Seq(
-	  "org.scalatest" %%% "scalatest" % "3.0.0-M10" % "test"
+	  "org.scalatest" %%% "scalatest" % "3.0.0-M15" % "test"
 	)
   ).
   jvmSettings(

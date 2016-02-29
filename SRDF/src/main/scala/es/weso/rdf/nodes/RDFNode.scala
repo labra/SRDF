@@ -1,4 +1,4 @@
-package es.weso.rdfgraph.nodes
+package es.weso.rdf.nodes
 
 abstract class RDFNode {
   def isIRI = this match {
