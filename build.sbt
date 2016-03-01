@@ -10,10 +10,10 @@ lazy val root = project.in(file(".")).
   )
 
 lazy val srdf = crossProject.
-  crossType(CrossType.Pure).
+  crossType(CrossType.Full).
   settings(
     name := "srdf",
-    version := "0.0.4",
+    version := "0.0.5",
     scalaVersion := "2.11.7", 
     organization := "es.weso",
 	libraryDependencies ++= Seq(
