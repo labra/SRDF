@@ -1,6 +1,7 @@
 SRDF - Simple RDF Library
 =========================
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/fd680bd45a0e49e4baf97f08cf4d8908)](https://www.codacy.com/app/jelabra/SRDF)
+[![Build Status](https://travis-ci.org/labra/SRDF.svg?branch=master)](https://travis-ci.org/labra/SRDF)
 
 A very simple library for RDF
 
