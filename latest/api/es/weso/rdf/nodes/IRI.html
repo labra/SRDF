@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>IRI - es.weso.rdfgraph.nodes.IRI</title>
-          <meta name="description" content="IRI - es.weso.rdfgraph.nodes.IRI" />
-          <meta name="keywords" content="IRI es.weso.rdfgraph.nodes.IRI" />
+          <title>IRI - es.weso.rdf.nodes.IRI</title>
+          <meta name="description" content="IRI - es.weso.rdf.nodes.IRI" />
+          <meta name="keywords" content="IRI es.weso.rdf.nodes.IRI" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,11 +12,11 @@
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'es.weso.rdfgraph.nodes.IRI';
+            var hash = 'es.weso.rdf.nodes.IRI';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,13 +29,13 @@
         <body class="type">
       <div id="definition">
         <a href="IRI$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
-        <p id="owner"><a href="../../../package.html" class="extype" name="es">es</a>.<a href="../../package.html" class="extype" name="es.weso">weso</a>.<a href="../package.html" class="extype" name="es.weso.rdfgraph">rdfgraph</a>.<a href="package.html" class="extype" name="es.weso.rdfgraph.nodes">nodes</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="es">es</a>.<a href="../../package.html" class="extype" name="es.weso">weso</a>.<a href="../package.html" class="extype" name="es.weso.rdf">rdf</a>.<a href="package.html" class="extype" name="es.weso.rdf.nodes">nodes</a></p>
         <h1><a href="IRI$.html" title="See companion object">IRI</a></h1><h3><span class="morelinks"><div>
             Related Docs:
             <a href="IRI$.html" title="See companion object">object IRI</a>
-            | <a href="package.html" class="extype" name="es.weso.rdfgraph.nodes">package nodes</a>
+            | <a href="package.html" class="extype" name="es.weso.rdf.nodes">package nodes</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -47,14 +47,18 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">IRI</span><span class="params">(<span name="uri">uri: <span class="extype" name="java.net.URI">URI</span></span>)</span><span class="result"> extends <a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">IRI</span><span class="params">(<span name="uri">uri: <span class="extype" name="java.net.URI">URI</span></span>)</span><span class="result"> extends <a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/labra/SRDF/tree/master/srdf/shared/src/main/scala/es/weso/rdf/nodes/IRI.scala" target="_blank">IRI.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="-1 -1 315 123" height="124pt" width="316pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="font-family:Times-Roman;font-size:14.00;" class="graph" id="graph0"><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><g class="node" id="node3"><a xlink:title="es.weso.rdf.nodes.IRI (this class)" xlink:href="#inheritance-diagram"><polygon points="182,66 124,66 124,92 182,92 182,66" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0"><polygon points="150,71 134,71 134,87 150,87 150,71 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0)" y="71" x="134" preserveAspectRatio="xMidYMid meet" height="26px" width="58px"></image><text y="82" x="164" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">IRI</text></a></g><g class="node" id="node4"><a xlink:title="es.weso.rdf.nodes.RDFNode" xlink:href="RDFNode.html#inheritance-diagram"><polygon points="95,4 5,4 5,30 95,30 95,4" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode1"><polygon points="31,9 15,9 15,25 31,25 31,9 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode1)" y="9" x="15" preserveAspectRatio="xMidYMid meet" height="26px" width="90px"></image><text y="20" x="61" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">RDFNode</text></a></g><g class="edge" id="edge4"><path d="M77,33C93,43 116,56 132,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="75,34 72,30 77,31 75,34" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node5"><polygon points="193,4 113,4 113,30 193,30 193,4" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode2"><polygon points="139,9 123,9 123,25 139,25 139,9 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode2)" y="9" x="123" preserveAspectRatio="xMidYMid meet" height="26px" width="80px"></image><text y="20" x="164" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Product</text></g><g class="edge" id="edge6"><path d="M153,35C153,45 153,57 153,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="151,35 153,30 155,35 151,35" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node6"><polygon points="309,4 211,4 211,30 309,30 309,4" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode3"><polygon points="237,9 221,9 221,25 237,25 237,9 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode3)" y="9" x="221" preserveAspectRatio="xMidYMid meet" height="26px" width="98px"></image><text y="20" x="271" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Serializable</text></g><g class="edge" id="edge8"><path d="M232,33C215,43 191,56 175,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="232,31 237,30 234,34 232,31" style="fill:none;stroke:#d4d4d4;"></polygon></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -71,7 +75,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="es.weso.rdfgraph.nodes.IRI"><span>IRI</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="es.weso.rdfgraph.nodes.RDFNode"><span>RDFNode</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="es.weso.rdf.nodes.IRI"><span>IRI</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="es.weso.rdf.nodes.RDFNode"><span>RDFNode</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,8 +94,8 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="es.weso.rdfgraph.nodes.IRI#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(uri:java.net.URI):es.weso.rdfgraph.nodes.IRI"></a>
+              <ol><li name="es.weso.rdf.nodes.IRI#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(uri:java.net.URI):es.weso.rdf.nodes.IRI"></a>
       <a id="&lt;init&gt;:IRI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -102,7 +106,7 @@
         <span class="name">IRI</span><span class="params">(<span name="uri">uri: <span class="extype" name="java.net.URI">URI</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@&lt;init&gt;(uri:java.net.URI):es.weso.rdfgraph.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@&lt;init&gt;(uri:java.net.URI):es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -125,10 +129,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -142,16 +146,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@##():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@##():Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#+" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="+(str:String):es.weso.rdfgraph.nodes.IRI"></a>
+    </li><li name="es.weso.rdf.nodes.IRI#+" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="+(str:String):es.weso.rdf.nodes.IRI"></a>
       <a id="+(String):IRI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -159,10 +163,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a></span>
+        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@+(str:String):es.weso.rdfgraph.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@+(str:String):es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -176,16 +180,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#add" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="add(str:String):es.weso.rdfgraph.nodes.IRI"></a>
+    </li><li name="es.weso.rdf.nodes.IRI#add" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="add(str:String):es.weso.rdf.nodes.IRI"></a>
       <a id="add(String):IRI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -193,10 +197,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">add</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a></span>
+        <span class="name">add</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@add(str:String):es.weso.rdfgraph.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@add(str:String):es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -213,7 +217,7 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -230,7 +234,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@clone():Object" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -250,10 +254,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -267,10 +271,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -293,12 +297,12 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#getLexicalForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="es.weso.rdf.nodes.IRI#getLexicalForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLexicalForm:String"></a>
       <a id="getLexicalForm:String"></a>
       <h4 class="signature">
@@ -310,12 +314,12 @@
         <span class="name">getLexicalForm</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@getLexicalForm:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@getLexicalForm:String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a> → <a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.RDFNode#isBNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a> → <a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.RDFNode#isBNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isBNode:Boolean"></a>
       <a id="isBNode:Boolean"></a>
       <h4 class="signature">
@@ -324,15 +328,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isBNode</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isBNode</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@isBNode:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@isBNode:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.RDFNode#isIRI" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.RDFNode#isIRI" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isIRI:Boolean"></a>
       <a id="isIRI:Boolean"></a>
       <h4 class="signature">
@@ -341,14 +345,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isIRI</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isIRI</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@isIRI:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@isIRI:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -358,15 +362,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.RDFNode#isLiteral" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="es.weso.rdf.nodes.RDFNode#isLiteral" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isLiteral:Boolean"></a>
       <a id="isLiteral:Boolean"></a>
       <h4 class="signature">
@@ -375,15 +379,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isLiteral</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isLiteral</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@isLiteral:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@isLiteral:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.RDFNode#isNonLiteral" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.RDFNode#isNonLiteral" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isNonLiteral:Boolean"></a>
       <a id="isNonLiteral:Boolean"></a>
       <h4 class="signature">
@@ -392,16 +396,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isNonLiteral</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isNonLiteral</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@isNonLiteral:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@isNonLiteral:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#minOrd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="minOrd:Ordering[es.weso.rdfgraph.nodes.IRI]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.IRI#minOrd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="minOrd:Ordering[es.weso.rdf.nodes.IRI]"></a>
       <a id="minOrd:Ordering[IRI]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -409,10 +413,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">minOrd</span><span class="result">: <span class="extype" name="scala.Ordering">Ordering</span>[<a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a>]</span>
+        <span class="name">minOrd</span><span class="result">: <span class="extype" name="scala.Ordering">Ordering</span>[<a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@minOrd:Ordering[es.weso.rdfgraph.nodes.IRI]" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@minOrd:Ordering[es.weso.rdf.nodes.IRI]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -426,10 +430,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -443,10 +447,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -460,16 +464,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#resolve" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolve(iri:es.weso.rdfgraph.nodes.IRI):es.weso.rdfgraph.nodes.IRI"></a>
+    </li><li name="es.weso.rdf.nodes.IRI#resolve" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolve(iri:es.weso.rdf.nodes.IRI):es.weso.rdf.nodes.IRI"></a>
       <a id="resolve(IRI):IRI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -477,17 +481,17 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolve</span><span class="params">(<span name="iri">iri: <a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a></span>)</span><span class="result">: <a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a></span>
+        <span class="name">resolve</span><span class="params">(<span name="iri">iri: <a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>)</span><span class="result">: <a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@resolve(iri:es.weso.rdfgraph.nodes.IRI):es.weso.rdfgraph.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@resolve(iri:es.weso.rdf.nodes.IRI):es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Resolve an IRI against this IRI (which is taken as the base)
 Currently, we employ java.net.URI algorithm to resolve
 </p>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#str" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.nodes.IRI#str" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="str:String"></a>
       <a id="str:String"></a>
       <h4 class="signature">
@@ -499,7 +503,7 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="name">str</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@str:String" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@str:String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -516,13 +520,13 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.RDFNode#toIRI" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toIRI:es.weso.rdfgraph.nodes.IRI"></a>
+    </li><li name="es.weso.rdf.nodes.RDFNode#toIRI" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toIRI:es.weso.rdf.nodes.IRI"></a>
       <a id="toIRI:IRI"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -530,15 +534,15 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toIRI</span><span class="result">: <a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a></span>
+        <span class="name">toIRI</span><span class="result">: <a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@toIRI:es.weso.rdfgraph.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@toIRI:es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.IRI#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -550,12 +554,12 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@toString():String" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@toString():String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="es.weso.rdfgraph.nodes.IRI">IRI</a> → AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdfgraph.nodes.IRI#uri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.IRI#uri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="uri:java.net.URI"></a>
       <a id="uri:URI"></a>
       <h4 class="signature">
@@ -567,7 +571,7 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="name">uri</span><span class="result">: <span class="extype" name="java.net.URI">URI</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@uri:java.net.URI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@uri:java.net.URI" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -581,10 +585,10 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -604,10 +608,10 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -627,10 +631,10 @@ Currently, we employ java.net.URI algorithm to resolve
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdfgraph.nodes.IRI@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.nodes.IRI@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -651,15 +655,15 @@ Currently, we employ java.net.URI algorithm to resolve
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.Serializable">
-              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
             </div><div class="parent" name="scala.Product">
-              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
             </div><div class="parent" name="scala.Equals">
-              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
-            </div><div class="parent" name="es.weso.rdfgraph.nodes.RDFNode">
-              <h3>Inherited from <a href="RDFNode.html" class="extype" name="es.weso.rdfgraph.nodes.RDFNode">RDFNode</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="es.weso.rdf.nodes.RDFNode">
+              <h3>Inherited from <a href="RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">

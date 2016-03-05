@@ -1,0 +1,616 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>RDFNode - es.weso.rdf.nodes.RDFNode</title>
+          <meta name="description" content="RDFNode - es.weso.rdf.nodes.RDFNode" />
+          <meta name="keywords" content="RDFNode es.weso.rdf.nodes.RDFNode" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'es.weso.rdf.nodes.RDFNode';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="RDFNode$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="es">es</a>.<a href="../../package.html" class="extype" name="es.weso">weso</a>.<a href="../package.html" class="extype" name="es.weso.rdf">rdf</a>.<a href="package.html" class="extype" name="es.weso.rdf.nodes">nodes</a></p>
+        <h1><a href="RDFNode$.html" title="See companion object">RDFNode</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="RDFNode$.html" title="See companion object">object RDFNode</a>
+            | <a href="package.html" class="extype" name="es.weso.rdf.nodes">package nodes</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RDFNode</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/labra/SRDF/tree/master/srdf/shared/src/main/scala/es/weso/rdf/nodes/RDFNode.scala" target="_blank">RDFNode.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="BNodeId.html" class="extype" name="es.weso.rdf.nodes.BNodeId">BNodeId</a>, <a href="BooleanLiteral.html" class="extype" name="es.weso.rdf.nodes.BooleanLiteral">BooleanLiteral</a>, <a href="DatatypeLiteral.html" class="extype" name="es.weso.rdf.nodes.DatatypeLiteral">DatatypeLiteral</a>, <a href="DecimalLiteral.html" class="extype" name="es.weso.rdf.nodes.DecimalLiteral">DecimalLiteral</a>, <a href="DoubleLiteral.html" class="extype" name="es.weso.rdf.nodes.DoubleLiteral">DoubleLiteral</a>, <a href="IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a>, <a href="InitialBNodeId$.html" class="extype" name="es.weso.rdf.nodes.InitialBNodeId">InitialBNodeId</a>, <a href="IntegerLiteral.html" class="extype" name="es.weso.rdf.nodes.IntegerLiteral">IntegerLiteral</a>, <a href="LangLiteral.html" class="extype" name="es.weso.rdf.nodes.LangLiteral">LangLiteral</a>, <a href="Literal.html" class="extype" name="es.weso.rdf.nodes.Literal">Literal</a>, <a href="StringLiteral.html" class="extype" name="es.weso.rdf.nodes.StringLiteral">StringLiteral</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="-1 -1 1121 161" height="162pt" width="1122pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="font-family:Times-Roman;font-size:14.00;" class="graph" id="graph0"><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><g class="node" id="node3"><a xlink:title="es.weso.rdf.nodes.RDFNode (this class)" xlink:href="#inheritance-diagram"><polygon points="639,66 549,66 549,92 639,92 639,66" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0"><polygon points="575,71 559,71 559,87 575,87 575,71 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0)" y="71" x="559" preserveAspectRatio="xMidYMid meet" height="26px" width="90px"></image><text y="82" x="605" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">RDFNode</text></a></g><g class="node" id="node4"><a xlink:title="es.weso.rdf.nodes.BNodeId" xlink:href="BNodeId.html#inheritance-diagram"><polygon points="89,128 5,128 5,154 89,154 89,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode1"><polygon points="31,133 15,133 15,149 31,149 31,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode1)" y="133" x="15" preserveAspectRatio="xMidYMid meet" height="26px" width="84px"></image><text y="144" x="58" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">BNodeId</text></a></g><g class="edge" id="edge6"><path d="M544,81C454,86 260,100 98,128 95,129 92,129 89,130" style="fill:none;stroke:#d4d4d4;"></path><polygon points="544,79 549,81 544,83 544,79" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node5"><a xlink:title="es.weso.rdf.nodes.BooleanLiteral" xlink:href="BooleanLiteral.html#inheritance-diagram"><polygon points="217,128 107,128 107,154 217,154 217,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode2"><polygon points="133,133 117,133 117,149 133,149 133,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode2)" y="133" x="117" preserveAspectRatio="xMidYMid meet" height="26px" width="110px"></image><text y="144" x="173" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">BooleanLiteral</text></a></g><g class="edge" id="edge8"><path d="M544,85C473,93 339,109 226,128 223,129 220,129 217,130" style="fill:none;stroke:#d4d4d4;"></path><polygon points="544,83 549,84 544,87 544,83" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node6"><a xlink:title="es.weso.rdf.nodes.DatatypeLiteral" xlink:href="DatatypeLiteral.html#inheritance-diagram"><polygon points="347,128 235,128 235,154 347,154 347,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode3"><polygon points="260,133 245,133 245,149 260,149 260,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode3)" y="133" x="245" preserveAspectRatio="xMidYMid meet" height="26px" width="112px"></image><text y="144" x="302" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">DatatypeLiteral</text></a></g><g class="edge" id="edge10"><path d="M544,89C490,100 404,117 347,129" style="fill:none;stroke:#d4d4d4;"></path><polygon points="544,87 549,88 544,91 544,87" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node7"><a xlink:title="es.weso.rdf.nodes.DecimalLiteral" xlink:href="DecimalLiteral.html#inheritance-diagram"><polygon points="475,128 365,128 365,154 475,154 475,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode4"><polygon points="391,133 375,133 375,149 391,149 391,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode4)" y="133" x="375" preserveAspectRatio="xMidYMid meet" height="26px" width="110px"></image><text y="144" x="431" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">DecimalLiteral</text></a></g><g class="edge" id="edge12"><path d="M552,94C523,104 484,118 456,128" style="fill:none;stroke:#d4d4d4;"></path><polygon points="552,92 557,92 553,95 552,92" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node8"><a xlink:title="es.weso.rdf.nodes.DoubleLiteral" xlink:href="DoubleLiteral.html#inheritance-diagram"><polygon points="597,128 493,128 493,154 597,154 597,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode5"><polygon points="518,133 503,133 503,149 518,149 518,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode5)" y="133" x="503" preserveAspectRatio="xMidYMid meet" height="26px" width="104px"></image><text y="144" x="556" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">DoubleLiteral</text></a></g><g class="edge" id="edge14"><path d="M581,96C572,106 563,118 555,128" style="fill:none;stroke:#d4d4d4;"></path><polygon points="580,95 584,92 582,97 580,95" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node9"><a xlink:title="es.weso.rdf.nodes.IRI" xlink:href="IRI.html#inheritance-diagram"><polygon points="673,128 615,128 615,154 673,154 673,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode6"><polygon points="641,133 625,133 625,149 641,149 641,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode6)" y="133" x="625" preserveAspectRatio="xMidYMid meet" height="26px" width="58px"></image><text y="144" x="655" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">IRI</text></a></g><g class="edge" id="edge16"><path d="M608,96C616,106 626,118 633,128" style="fill:none;stroke:#d4d4d4;"></path><polygon points="607,97 605,92 609,95 607,97" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node10"><a xlink:title="es.weso.rdf.nodes.IntegerLiteral" xlink:href="IntegerLiteral.html#inheritance-diagram"><polygon points="795,128 691,128 691,154 795,154 795,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode7"><polygon points="717,133 701,133 701,149 717,149 717,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode7)" y="133" x="701" preserveAspectRatio="xMidYMid meet" height="26px" width="104px"></image><text y="144" x="754" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">IntegerLiteral</text></a></g><g class="edge" id="edge18"><path d="M631,94C655,104 689,118 712,128" style="fill:none;stroke:#d4d4d4;"></path><polygon points="630,95 626,92 631,92 630,95" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node11"><a xlink:title="es.weso.rdf.nodes.LangLiteral" xlink:href="LangLiteral.html#inheritance-diagram"><polygon points="907,128 813,128 813,154 907,154 907,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode8"><polygon points="838,133 823,133 823,149 838,149 838,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode8)" y="133" x="823" preserveAspectRatio="xMidYMid meet" height="26px" width="94px"></image><text y="144" x="871" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">LangLiteral</text></a></g><g class="edge" id="edge20"><path d="M644,91C692,102 766,119 813,130" style="fill:none;stroke:#d4d4d4;"></path><polygon points="644,93 639,90 644,89 644,93" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node12"><a xlink:title="es.weso.rdf.nodes.Literal" xlink:href="Literal.html#inheritance-diagram"><polygon points="997,128 925,128 925,154 997,154 997,128" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode9"><polygon points="950,133 935,133 935,149 950,149 950,133 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode9)" y="133" x="935" preserveAspectRatio="xMidYMid meet" height="26px" width="72px"></image><text y="144" x="972" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Literal</text></a></g><g class="edge" id="edge22"><path d="M644,85C707,92 821,108 916,128 919,129 922,129 925,130" style="fill:none;stroke:#d4d4d4;"></path><polygon points="644,87 639,84 644,83 644,87" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node13"><a xlink:title="es.weso.rdf.nodes.StringLiteral" xlink:href="StringLiteral.html#inheritance-diagram"><polygon points="1115,128 1015,128 1015,154 1115,154 1115,128" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode10"><polygon points="1041,133 1025,133 1025,149 1041,149 1041,133 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode10)" y="133" x="1025" preserveAspectRatio="xMidYMid meet" height="26px" width="100px"></image><text y="144" x="1076" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">StringLiteral</text></a></g><g class="edge" id="edge24"><path d="M644,83C722,91 876,106 1006,128 1009,129 1012,129 1015,130" style="fill:none;stroke:#d4d4d4;"></path><polygon points="644,85 639,83 644,81 644,85" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node14"><polygon points="634,4 554,4 554,30 634,30 634,4" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode11"><polygon points="580,9 564,9 564,25 580,25 580,9 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode11)" y="9" x="564" preserveAspectRatio="xMidYMid meet" height="26px" width="80px"></image><text y="20" x="605" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">AnyRef</text></g><g class="edge" id="edge4"><path d="M594,35C594,45 594,57 594,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="592,35 594,30 596,35 592,35" style="fill:none;stroke:#d4d4d4;"></polygon></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="es.weso.rdf.nodes.RDFNode"><span>RDFNode</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="es.weso.rdf.nodes.RDFNode#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():es.weso.rdf.nodes.RDFNode"></a>
+      <a id="&lt;init&gt;:RDFNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RDFNode</span><span class="params">()</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@&lt;init&gt;():es.weso.rdf.nodes.RDFNode" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="es.weso.rdf.nodes.RDFNode#getLexicalForm" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="getLexicalForm:String"></a>
+      <a id="getLexicalForm:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLexicalForm</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@getLexicalForm:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.RDFNode#isBNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isBNode:Boolean"></a>
+      <a id="isBNode:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isBNode</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@isBNode:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="es.weso.rdf.nodes.RDFNode#isIRI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isIRI:Boolean"></a>
+      <a id="isIRI:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isIRI</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@isIRI:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.RDFNode#isLiteral" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isLiteral:Boolean"></a>
+      <a id="isLiteral:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLiteral</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@isLiteral:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="es.weso.rdf.nodes.RDFNode#isNonLiteral" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isNonLiteral:Boolean"></a>
+      <a id="isNonLiteral:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNonLiteral</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@isNonLiteral:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="es.weso.rdf.nodes.RDFNode#toIRI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toIRI:es.weso.rdf.nodes.IRI"></a>
+      <a id="toIRI:IRI"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toIRI</span><span class="result">: <a href="IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@toIRI:es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.nodes.RDFNode@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
