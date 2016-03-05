@@ -20,6 +20,7 @@ lazy val srdf = crossProject.
 	  "org.scalatest" %%% "scalatest" % "3.0.0-M15" % "test"
 	)
   ).
+  settings(publishSettings:_*).
   jvmSettings(
     name := name.value + "-jvm",
 	libraryDependencies ++= Seq(
@@ -59,3 +60,25 @@ ghpages.settings
 
 git.remoteRepo := "git@github.com:labra/SRDF.git"
 
+lazy val publishSettings = Seq(
+  homepage := Some(url("https://github.com/labra/SRDF")),
+  licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT")),
+  scmInfo := Some(ScmInfo(url("https://github.com/labra/SRDF"), "scm:git:git@github.com:labra/SRDF.git")),
+  autoAPIMappings := true,
+  apiURL := Some(url("http://labra.github.io/SRDF/latest/api/")),
+  pomExtra := (
+    <developers>
+      <developer>
+        <id>labra</id>
+        <name>Jose Emilio Labra</name>
+        <url>https://github.com/labra/</url>
+      </developer>
+    </developers>
+  ),
+  scalacOptions in (Compile,doc) ++= Seq(
+    "-Xfatal-warnings",
+    "-doc-source-url", scmInfo.value.get.browseUrl + "/tree/master€{FILE_PATH}.scala",
+    "-sourcepath", baseDirectory.in(LocalRootProject).value.getAbsolutePath,
+    "-diagrams"
+  )
+)
