@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>triples - es.weso.rdf.triples</title>
-          <meta name="description" content="triples - es.weso.rdf.triples" />
-          <meta name="keywords" content="triples es.weso.rdf.triples" />
+          <title>parser - es.weso.rdf.parser</title>
+          <meta name="description" content="parser - es.weso.rdf.parser" />
+          <meta name="keywords" content="parser es.weso.rdf.parser" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'es.weso.rdf.triples.package';
+            var hash = 'es.weso.rdf.parser.package';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -30,8 +30,8 @@
       <div id="definition">
         <img alt="Package" src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="es">es</a>.<a href="../../package.html" class="extype" name="es.weso">weso</a>.<a href="../package.html" class="extype" name="es.weso.rdf">rdf</a></p>
-        <h1>triples</h1><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.package" title="Permalink" target="_top">
+        <h1>parser</h1><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.package" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -43,7 +43,7 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <span class="name">triples</span>
+        <span class="name">parser</span>
       </span>
       </h4>
       
@@ -66,19 +66,36 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="es.weso.rdf.triples.RDFTriple" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="RDFTripleextendsProductwithSerializable"></a>
-      <a id="RDFTriple:RDFTriple"></a>
+              <ol><li name="es.weso.rdf.parser.RDFParser" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RDFParserextendsAnyRef"></a>
+      <a id="RDFParser:RDFParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RDFParser.html"><span class="name">RDFParser</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.package@RDFParserextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="es.weso.rdf.parser.RDFParserException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RDFParserExceptionextendsExceptionwithProductwithSerializable"></a>
+      <a id="RDFParserException:RDFParserException"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="RDFTriple.html"><span class="name">RDFTriple</span></a><span class="params">(<span name="subj">subj: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>, <span name="pred">pred: <a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>, <span name="obj">obj: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="RDFParserException.html"><span class="name">RDFParserException</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.package@RDFTripleextendsProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.package@RDFParserExceptionextendsExceptionwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -88,27 +105,7 @@
 
         
 
-        <div id="values" class="values members">
-              <h3>Value Members</h3>
-              <ol><li name="es.weso.rdf.triples.RDFTriple" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="RDFTriple"></a>
-      <a id="RDFTriple:RDFTriple"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="RDFTriple$.html"><span class="name">RDFTriple</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.package@RDFTriple" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
 
         
 

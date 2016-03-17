@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>RDFTriple - es.weso.rdf.triples.RDFTriple</title>
-          <meta name="description" content="RDFTriple - es.weso.rdf.triples.RDFTriple" />
-          <meta name="keywords" content="RDFTriple es.weso.rdf.triples.RDFTriple" />
+          <title>RDFParserException - es.weso.rdf.parser.RDFParserException</title>
+          <meta name="description" content="RDFParserException - es.weso.rdf.parser.RDFParserException" />
+          <meta name="keywords" content="RDFParserException es.weso.rdf.parser.RDFParserException" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'es.weso.rdf.triples.RDFTriple';
+            var hash = 'es.weso.rdf.parser.RDFParserException';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -28,14 +28,12 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="RDFTriple$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
-        <p id="owner"><a href="../../../package.html" class="extype" name="es">es</a>.<a href="../../package.html" class="extype" name="es.weso">weso</a>.<a href="../package.html" class="extype" name="es.weso.rdf">rdf</a>.<a href="package.html" class="extype" name="es.weso.rdf.triples">triples</a></p>
-        <h1><a href="RDFTriple$.html" title="See companion object">RDFTriple</a></h1><h3><span class="morelinks"><div>
-            Related Docs:
-            <a href="RDFTriple$.html" title="See companion object">object RDFTriple</a>
-            | <a href="package.html" class="extype" name="es.weso.rdf.triples">package triples</a>
+        <img alt="Class" src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="es">es</a>.<a href="../../package.html" class="extype" name="es.weso">weso</a>.<a href="../package.html" class="extype" name="es.weso.rdf">rdf</a>.<a href="package.html" class="extype" name="es.weso.rdf.parser">parser</a></p>
+        <h1>RDFParserException</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="es.weso.rdf.parser">package parser</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -47,16 +45,16 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">RDFTriple</span><span class="params">(<span name="subj">subj: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>, <span name="pred">pred: <a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>, <span name="obj">obj: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <span class="name">RDFParserException</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/labra/SRDF/tree/master/srdf/shared/src/main/scala/es/weso/rdf/triples/RDFTriple.scala" target="_blank">RDFTriple.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/labra/SRDF/tree/master/srdf/shared/src/main/scala/es/weso/rdf/parser/RDFParser.scala" target="_blank">RDFParser.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <span class="extype" name="java.lang.Exception">Exception</span>, <span class="extype" name="java.lang.Throwable">Throwable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="-1 -1 207 123" height="124pt" width="208pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="font-family:Times-Roman;font-size:14.00;" class="graph" id="graph0"><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><g class="node" id="node3"><a xlink:title="es.weso.rdf.triples.RDFTriple (this class)" xlink:href="#inheritance-diagram"><polygon points="143,66 53,66 53,92 143,92 143,66" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0"><polygon points="78,71 63,71 63,87 78,87 78,71 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0)" y="71" x="63" preserveAspectRatio="xMidYMid meet" height="26px" width="90px"></image><text y="82" x="109" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">RDFTriple</text></a></g><g class="node" id="node4"><polygon points="85,4 5,4 5,30 85,30 85,4" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode1"><polygon points="31,9 15,9 15,25 31,25 31,9 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode1)" y="9" x="15" preserveAspectRatio="xMidYMid meet" height="26px" width="80px"></image><text y="20" x="56" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Product</text></g><g class="edge" id="edge4"><path d="M60,34C68,44 79,56 87,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="58,35 56,30 61,32 58,35" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node5"><polygon points="201,4 103,4 103,30 201,30 201,4" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode2"><polygon points="129,9 113,9 113,25 129,25 129,9 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode2)" y="9" x="113" preserveAspectRatio="xMidYMid meet" height="26px" width="98px"></image><text y="20" x="163" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Serializable</text></g><g class="edge" id="edge6"><path d="M137,34C129,44 118,56 110,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="136,32 141,30 139,35 136,32" style="fill:none;stroke:#d4d4d4;"></polygon></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="-1 -1 315 123" height="124pt" width="316pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="font-family:Times-Roman;font-size:14.00;" class="graph" id="graph0"><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><g class="node" id="node3"><a xlink:title="es.weso.rdf.parser.RDFParserException (this class)" xlink:href="#inheritance-diagram"><polygon points="223,66 83,66 83,92 223,92 223,66" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0"><polygon points="109,71 93,71 93,87 109,87 109,71 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode0)" y="71" x="93" preserveAspectRatio="xMidYMid meet" height="26px" width="140px"></image><text y="82" x="164" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">RDFParserException</text></a></g><g class="node" id="node4"><polygon points="95,4 5,4 5,30 95,30 95,4" style="fill:#0a955b;stroke:#115f3b;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode1"><polygon points="31,9 15,9 15,25 31,25 31,9 "></polygon></clipPath><image xlink:href="../../../../lib/class_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/class_diagram.pngnode1)" y="9" x="15" preserveAspectRatio="xMidYMid meet" height="26px" width="90px"></image><text y="20" x="61" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Exception</text></g><g class="edge" id="edge4"><path d="M77,33C93,43 116,56 132,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="75,34 72,30 77,31 75,34" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node5"><polygon points="193,4 113,4 113,30 193,30 193,4" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode2"><polygon points="139,9 123,9 123,25 139,25 139,9 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode2)" y="9" x="123" preserveAspectRatio="xMidYMid meet" height="26px" width="80px"></image><text y="20" x="164" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Product</text></g><g class="edge" id="edge6"><path d="M153,35C153,45 153,57 153,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="151,35 153,30 155,35 151,35" style="fill:none;stroke:#d4d4d4;"></polygon></g><g class="node" id="node6"><polygon points="309,4 211,4 211,30 309,30 309,4" style="fill:#498aad;stroke:#37657d;"></polygon><clipPath id="mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode3"><polygon points="237,9 221,9 221,25 237,25 237,9 "></polygon></clipPath><image xlink:href="../../../../lib/trait_diagram.png" clip-path="url(#mypathC:\src\shapes\SRDF\srdf\jvm\target\scala-2.11\api/lib/trait_diagram.pngnode3)" y="9" x="221" preserveAspectRatio="xMidYMid meet" height="26px" width="98px"></image><text y="20" x="271" style="font-family:Arial;font-size:10.00;fill:#ffffff;" text-anchor="middle">Serializable</text></g><g class="edge" id="edge8"><path d="M232,33C215,43 191,56 175,66" style="fill:none;stroke:#d4d4d4;"></path><polygon points="232,31 237,30 234,34 232,31" style="fill:none;stroke:#d4d4d4;"></polygon></g></g></svg></div>
               </div></div>
         
 
@@ -74,7 +72,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="es.weso.rdf.triples.RDFTriple"><span>RDFTriple</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="es.weso.rdf.parser.RDFParserException"><span>RDFParserException</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="java.lang.Exception"><span>Exception</span></li><li class="in" name="java.lang.Throwable"><span>Throwable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -93,19 +91,19 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="es.weso.rdf.triples.RDFTriple#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(subj:es.weso.rdf.nodes.RDFNode,pred:es.weso.rdf.nodes.IRI,obj:es.weso.rdf.nodes.RDFNode):es.weso.rdf.triples.RDFTriple"></a>
-      <a id="&lt;init&gt;:RDFTriple"></a>
+              <ol><li name="es.weso.rdf.parser.RDFParserException#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(msg:String):es.weso.rdf.parser.RDFParserException"></a>
+      <a id="&lt;init&gt;:RDFParserException"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">RDFTriple</span><span class="params">(<span name="subj">subj: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>, <span name="pred">pred: <a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>, <span name="obj">obj: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span>
+        <span class="name">RDFParserException</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@&lt;init&gt;(subj:es.weso.rdf.nodes.RDFNode,pred:es.weso.rdf.nodes.IRI,obj:es.weso.rdf.nodes.RDFNode):es.weso.rdf.triples.RDFTriple" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@&lt;init&gt;(msg:String):es.weso.rdf.parser.RDFParserException" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -131,7 +129,7 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@!=(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -148,7 +146,7 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@##():Int" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@##():Int" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -165,11 +163,28 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@==(x$1:Any):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@==(x$1:Any):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="java.lang.Throwable#addSuppressed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addSuppressed(x$1:Throwable):Unit"></a>
+      <a id="addSuppressed(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addSuppressed</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Throwable">Throwable</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@addSuppressed(x$1:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -182,28 +197,11 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@asInstanceOf[T0]:T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="es.weso.rdf.triples.RDFTriple#bNodes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="bNodes:scala.collection.Set[es.weso.rdf.nodes.BNodeId]"></a>
-      <a id="bNodes:Set[BNodeId]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">bNodes</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.Set" class="extype" target="_top">Set</a>[<a href="../nodes/BNodeId.html" class="extype" name="es.weso.rdf.nodes.BNodeId">BNodeId</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@bNodes:scala.collection.Set[es.weso.rdf.nodes.BNodeId]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -216,7 +214,7 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@clone():Object" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@clone():Object" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -239,45 +237,28 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="es.weso.rdf.triples.RDFTriple#extractBNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="extractBNode(node:es.weso.rdf.nodes.RDFNode):scala.collection.Set[es.weso.rdf.nodes.BNodeId]"></a>
-      <a id="extractBNode(RDFNode):Set[BNodeId]"></a>
+    </li><li name="java.lang.Throwable#fillInStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fillInStackTrace():Throwable"></a>
+      <a id="fillInStackTrace():Throwable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">extractBNode</span><span class="params">(<span name="node">node: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.Set" class="extype" target="_top">Set</a>[<a href="../nodes/BNodeId.html" class="extype" name="es.weso.rdf.nodes.BNodeId">BNodeId</a>]</span>
+        <span class="name">fillInStackTrace</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@extractBNode(node:es.weso.rdf.nodes.RDFNode):scala.collection.Set[es.weso.rdf.nodes.BNodeId]" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@fillInStackTrace():Throwable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.triples.RDFTriple#extractIRI" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="extractIRI(node:es.weso.rdf.nodes.RDFNode):scala.collection.Set[es.weso.rdf.nodes.IRI]"></a>
-      <a id="extractIRI(RDFNode):Set[IRI]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">extractIRI</span><span class="params">(<span name="node">node: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.Set" class="extype" target="_top">Set</a>[<a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@extractIRI(node:es.weso.rdf.nodes.RDFNode):scala.collection.Set[es.weso.rdf.nodes.IRI]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -290,7 +271,7 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@finalize():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@finalize():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -301,6 +282,23 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="java.lang.Throwable#getCause" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCause():Throwable"></a>
+      <a id="getCause():Throwable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCause</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@getCause():Throwable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -313,79 +311,96 @@
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@getClass():Class[_]" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@getClass():Class[_]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdf.triples.RDFTriple#hasObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasObject(node:es.weso.rdf.nodes.RDFNode):Boolean"></a>
-      <a id="hasObject(RDFNode):Boolean"></a>
+    </li><li name="java.lang.Throwable#getLocalizedMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLocalizedMessage():String"></a>
+      <a id="getLocalizedMessage():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hasObject</span><span class="params">(<span name="node">node: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">getLocalizedMessage</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@hasObject(node:es.weso.rdf.nodes.RDFNode):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@getLocalizedMessage():String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.triples.RDFTriple#hasPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasPredicate(p:es.weso.rdf.nodes.IRI):Boolean"></a>
-      <a id="hasPredicate(IRI):Boolean"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#getMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMessage():String"></a>
+      <a id="getMessage():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hasPredicate</span><span class="params">(<span name="p">p: <a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">getMessage</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@hasPredicate(p:es.weso.rdf.nodes.IRI):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@getMessage():String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.triples.RDFTriple#hasSubject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="hasSubject(node:es.weso.rdf.nodes.RDFNode):Boolean"></a>
-      <a id="hasSubject(RDFNode):Boolean"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#getStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getStackTrace():Array[StackTraceElement]"></a>
+      <a id="getStackTrace():Array[StackTraceElement]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hasSubject</span><span class="params">(<span name="node">node: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">getStackTrace</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@hasSubject(node:es.weso.rdf.nodes.RDFNode):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@getStackTrace():Array[StackTraceElement]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.triples.RDFTriple#iris" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="iris:scala.collection.Set[es.weso.rdf.nodes.IRI]"></a>
-      <a id="iris:Set[IRI]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#getSuppressed" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getSuppressed():Array[Throwable]"></a>
+      <a id="getSuppressed():Array[Throwable]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSuppressed</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="java.lang.Throwable">Throwable</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@getSuppressed():Array[Throwable]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#initCause" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initCause(x$1:Throwable):Throwable"></a>
+      <a id="initCause(Throwable):Throwable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">iris</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.Set" class="extype" target="_top">Set</a>[<a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a>]</span>
+        <span class="name">initCause</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@iris:scala.collection.Set[es.weso.rdf.nodes.IRI]" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@initCause(x$1:Throwable):Throwable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -398,11 +413,28 @@
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="es.weso.rdf.parser.RDFParserException#msg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="msg:String"></a>
+      <a id="msg:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">msg</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@msg:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -415,7 +447,7 @@
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -432,7 +464,7 @@
         <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@notify():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@notify():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -449,62 +481,79 @@
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@notifyAll():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@notifyAll():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="es.weso.rdf.triples.RDFTriple#obj" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="obj:es.weso.rdf.nodes.RDFNode"></a>
-      <a id="obj:RDFNode"></a>
+    </li><li name="java.lang.Throwable#printStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="printStackTrace(x$1:java.io.PrintWriter):Unit"></a>
+      <a id="printStackTrace(PrintWriter):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">obj</span><span class="result">: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>
+        <span class="name">printStackTrace</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintWriter">PrintWriter</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@obj:es.weso.rdf.nodes.RDFNode" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@printStackTrace(x$1:java.io.PrintWriter):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.triples.RDFTriple#pred" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pred:es.weso.rdf.nodes.IRI"></a>
-      <a id="pred:IRI"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#printStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="printStackTrace(x$1:java.io.PrintStream):Unit"></a>
+      <a id="printStackTrace(PrintStream):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pred</span><span class="result">: <a href="../nodes/IRI.html" class="extype" name="es.weso.rdf.nodes.IRI">IRI</a></span>
+        <span class="name">printStackTrace</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintStream">PrintStream</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@pred:es.weso.rdf.nodes.IRI" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@printStackTrace(x$1:java.io.PrintStream):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.triples.RDFTriple#subj" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="subj:es.weso.rdf.nodes.RDFNode"></a>
-      <a id="subj:RDFNode"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#printStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="printStackTrace():Unit"></a>
+      <a id="printStackTrace():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">subj</span><span class="result">: <a href="../nodes/RDFNode.html" class="extype" name="es.weso.rdf.nodes.RDFNode">RDFNode</a></span>
+        <span class="name">printStackTrace</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@subj:es.weso.rdf.nodes.RDFNode" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@printStackTrace():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
+    </li><li name="java.lang.Throwable#setStackTrace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setStackTrace(x$1:Array[StackTraceElement]):Unit"></a>
+      <a id="setStackTrace(Array[StackTraceElement]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setStackTrace</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@setStackTrace(x$1:Array[StackTraceElement]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -517,12 +566,12 @@
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="es.weso.rdf.triples.RDFTriple#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="java.lang.Throwable#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
@@ -531,14 +580,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@toString():String" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@toString():String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="es.weso.rdf.triples.RDFTriple">RDFTriple</a> → AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Throwable → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -551,7 +600,7 @@
         <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@wait():Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@wait():Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -574,7 +623,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -597,7 +646,7 @@
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.triples.RDFTriple@wait(x$1:Long):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#es.weso.rdf.parser.RDFParserException@wait(x$1:Long):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -619,12 +668,16 @@
         <div id="inheritedMembers">
         <div class="parent" name="scala.Serializable">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
-            </div><div class="parent" name="java.io.Serializable">
-              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
             </div><div class="parent" name="scala.Product">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="java.lang.Exception">
+              <h3>Inherited from <span class="extype" name="java.lang.Exception">Exception</span></h3>
+            </div><div class="parent" name="java.lang.Throwable">
+              <h3>Inherited from <span class="extype" name="java.lang.Throwable">Throwable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
