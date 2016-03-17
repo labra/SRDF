@@ -49,7 +49,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/labra/SRDF/tree/master/srdf/shared/src/main/scala/es/weso/rdf/parser/RDFParser.scala" target="_blank">RDFParser.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Obtains data from an RDFReader</p><p>The approach is similar to parser combinators but instead of sequence of characters,
+we have RDF graphs available through an RDFReader</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/labra/SRDF/tree/master/srdf/shared/src/main/scala/es/weso/rdf/parser/RDFParser.scala" target="_blank">RDFParser.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
@@ -109,7 +110,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">An RDFParser of values of type <code>a</code> takes an pointed node <code>RDFNode</code>
+and an <code>RDFReader</code> and tries to obtain a value of type <code>a</code>
+</p>
     </li></ol>
             </div>
 
@@ -242,23 +245,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdf.parser.RDFParser#fail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fail[A](str:String):scala.util.Try[A]"></a>
-      <a id="fail[A](String):Try[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fail</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.util.Try" class="extype" target="_top">Try</a>[<span class="extype" name="es.weso.rdf.parser.RDFParser.fail.A">A</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#es.weso.rdf.parser.RDFParser@fail[A](str:String):scala.util.Try[A]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -316,7 +302,7 @@
       </a>
     </span>
       
-    </li><li name="es.weso.rdf.parser.RDFParser#group" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.parser.RDFParser#group" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="group[A](parser:RDFParser.this.RDFParser[A],nodes:Seq[es.weso.rdf.nodes.RDFNode]):RDFParser.this.RDFParser[Seq[A]]"></a>
       <a id="group[A](RDFParser[A],Seq[RDFNode]):RDFParser[Seq[A]]"></a>
       <h4 class="signature">
@@ -332,8 +318,10 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#hasNoRDFType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Applies a parser over a sequence of nodes
+</p><div class="fullcomment"><div class="comment cmt"><p>Applies a parser over a sequence of nodes
+</p></div><dl class="paramcmts block"><dt class="param">parser</dt><dd class="cmt"><p>parser</p></dd><dt class="param">nodes</dt><dd class="cmt"><p>sequence of nodes</p></dd></dl></div>
+    </li><li name="es.weso.rdf.parser.RDFParser#hasNoRDFType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hasNoRDFType(t:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[Boolean]"></a>
       <a id="hasNoRDFType(IRI):RDFParser[Boolean]"></a>
       <h4 class="signature">
@@ -349,7 +337,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns <code>true</code> if the current node does not have a given type
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if the current node does not have a given type
+</p></div><dl class="paramcmts block"><dt class="param">t</dt><dd class="cmt"><p>type to be checked</p></dd></dl></div>
     </li><li name="es.weso.rdf.parser.RDFParser#hasPredicateWithSubject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="hasPredicateWithSubject(n:es.weso.rdf.nodes.RDFNode,p:es.weso.rdf.nodes.IRI,rdf:es.weso.rdf.RDFReader):Boolean"></a>
       <a id="hasPredicateWithSubject(RDFNode,IRI,RDFReader):Boolean"></a>
@@ -367,7 +357,7 @@
       </a>
     </span>
       
-    </li><li name="es.weso.rdf.parser.RDFParser#hasRDFType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.parser.RDFParser#hasRDFType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hasRDFType(t:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[Boolean]"></a>
       <a id="hasRDFType(IRI):RDFParser[Boolean]"></a>
       <h4 class="signature">
@@ -383,8 +373,10 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#hasSomeRDFType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Returns <code>true</code> if the current node has a given type
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if the current node has a given type
+</p></div><dl class="paramcmts block"><dt class="param">t</dt><dd class="cmt"><p>type to be checked</p></dd></dl></div>
+    </li><li name="es.weso.rdf.parser.RDFParser#hasSomeRDFType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hasSomeRDFType(ts:Set[es.weso.rdf.nodes.IRI]):RDFParser.this.RDFParser[Boolean]"></a>
       <a id="hasSomeRDFType(Set[IRI]):RDFParser[Boolean]"></a>
       <h4 class="signature">
@@ -400,7 +392,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns <code>true</code> if the current node has a type which belong to a given set of types
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>true</code> if the current node has a type which belong to a given set of types
+</p></div><dl class="paramcmts block"><dt class="param">ts</dt><dd class="cmt"><p>set of types to be checked</p></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -418,7 +412,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="es.weso.rdf.parser.RDFParser#integerLiteralForPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.parser.RDFParser#integerLiteralForPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="integerLiteralForPredicate(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[Integer]"></a>
       <a id="integerLiteralForPredicate(IRI):RDFParser[Integer]"></a>
       <h4 class="signature">
@@ -434,7 +428,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Obtains an integer literal associated with a predicate in the current node
+</p><div class="fullcomment"><div class="comment cmt"><p>Obtains an integer literal associated with a predicate in the current node
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>predicate</p></dd></dl></div>
     </li><li name="es.weso.rdf.parser.RDFParser#iriFromPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="iriFromPredicate(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[es.weso.rdf.nodes.IRI]"></a>
       <a id="iriFromPredicate(IRI):RDFParser[IRI]"></a>
@@ -520,7 +516,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="es.weso.rdf.parser.RDFParser#objectFromPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.parser.RDFParser#objectFromPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objectFromPredicate(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[es.weso.rdf.nodes.RDFNode]"></a>
       <a id="objectFromPredicate(IRI):RDFParser[RDFNode]"></a>
       <h4 class="signature">
@@ -536,7 +532,8 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">RDFParser that retrieves the object associated with current node for a given predicate</p><div class="fullcomment"><div class="comment cmt"><p>RDFParser that retrieves the object associated with current node for a given predicate</p><p>Fails if there are more than one object
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>predicate</p></dd></dl></div>
     </li><li name="es.weso.rdf.parser.RDFParser#objectFromPredicateOptional" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="objectFromPredicateOptional(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[Option[es.weso.rdf.nodes.RDFNode]]"></a>
       <a id="objectFromPredicateOptional(IRI):RDFParser[Option[RDFNode]]"></a>
@@ -554,7 +551,7 @@
       </a>
     </span>
       
-    </li><li name="es.weso.rdf.parser.RDFParser#objectsFromPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.parser.RDFParser#objectsFromPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="objectsFromPredicate(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[Set[es.weso.rdf.nodes.RDFNode]]"></a>
       <a id="objectsFromPredicate(IRI):RDFParser[Set[RDFNode]]"></a>
       <h4 class="signature">
@@ -570,7 +567,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">RDFParser that retrieves the set of objects associated with the current node for a given predicate</p><div class="fullcomment"><div class="comment cmt"><p>RDFParser that retrieves the set of objects associated with the current node for a given predicate</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>predicate</p></dd></dl></div>
     </li><li name="es.weso.rdf.parser.RDFParser#objectsFromTriples" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="objectsFromTriples(triples:Set[es.weso.rdf.triples.RDFTriple]):Set[es.weso.rdf.nodes.RDFNode]"></a>
       <a id="objectsFromTriples(Set[RDFTriple]):Set[RDFNode]"></a>
@@ -588,7 +585,7 @@
       </a>
     </span>
       
-    </li><li name="es.weso.rdf.parser.RDFParser#oneOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="es.weso.rdf.parser.RDFParser#oneOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="oneOf[A](parsers:Seq[RDFParser.this.RDFParser[A]]):RDFParser.this.RDFParser[A]"></a>
       <a id="oneOf[A](Seq[RDFParser[A]]):RDFParser[A]"></a>
       <h4 class="signature">
@@ -604,7 +601,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Checks that exactly on of the parsers succeeds on the current node
+</p><div class="fullcomment"><div class="comment cmt"><p>Checks that exactly on of the parsers succeeds on the current node
+</p></div><dl class="paramcmts block"><dt class="param">parsers</dt><dd class="cmt"><p>sequence of parsers</p></dd></dl></div>
     </li><li name="es.weso.rdf.parser.RDFParser#optional" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="optional[A](parser:RDFParser.this.RDFParser[A]):RDFParser.this.RDFParser[Option[A]]"></a>
       <a id="optional[A](RDFParser[A]):RDFParser[Option[A]]"></a>
@@ -621,8 +620,8 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#rdfList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">An RDF parser that parses a value of type <code>a</code> if possible</p>
+    </li><li name="es.weso.rdf.parser.RDFParser#rdfList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rdfList:RDFParser.this.RDFParser[List[es.weso.rdf.nodes.RDFNode]]"></a>
       <a id="rdfList:RDFParser[List[RDFNode]]"></a>
       <h4 class="signature">
@@ -638,8 +637,9 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#rdfListForPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">A parser of the RDF List associated with the current node</p><div class="fullcomment"><div class="comment cmt"><p>A parser of the RDF List associated with the current node</p><p>Fails if there are more than one objects associated with <code>rdf_first</code> or <code>rdf_rest</code>
+</p></div></div>
+    </li><li name="es.weso.rdf.parser.RDFParser#rdfListForPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rdfListForPredicate(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[List[es.weso.rdf.nodes.RDFNode]]"></a>
       <a id="rdfListForPredicate(IRI):RDFParser[List[RDFNode]]"></a>
       <h4 class="signature">
@@ -655,8 +655,10 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#rdfType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Obtains the RDF list associated with a predicate for the current node
+</p><div class="fullcomment"><div class="comment cmt"><p>Obtains the RDF list associated with a predicate for the current node
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>predicate</p></dd></dl></div>
+    </li><li name="es.weso.rdf.parser.RDFParser#rdfType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rdfType:RDFParser.this.RDFParser[es.weso.rdf.nodes.RDFNode]"></a>
       <a id="rdfType:RDFParser[RDFNode]"></a>
       <h4 class="signature">
@@ -672,7 +674,8 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns a parser that obtains the type associated with the current node</p><div class="fullcomment"><div class="comment cmt"><p>Returns a parser that obtains the type associated with the current node</p><p>Fails if there are more than one type associated
+</p></div></div>
     </li><li name="es.weso.rdf.parser.RDFParser#rdfTypes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="rdfTypes:RDFParser.this.RDFParser[Set[es.weso.rdf.nodes.RDFNode]]"></a>
       <a id="rdfTypes:RDFParser[Set[RDFNode]]"></a>
@@ -689,8 +692,10 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#someOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Returns a parser that obtains the set of types associated
+with the current node
+</p>
+    </li><li name="es.weso.rdf.parser.RDFParser#someOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="someOf[A](ps:Seq[RDFParser.this.RDFParser[A]]):RDFParser.this.RDFParser[A]"></a>
       <a id="someOf[A](Seq[RDFParser[A]]):RDFParser[A]"></a>
       <h4 class="signature">
@@ -706,8 +711,10 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="es.weso.rdf.parser.RDFParser#stringFromPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Checks if some of the parsers pass and returns the corresponding value
+</p><div class="fullcomment"><div class="comment cmt"><p>Checks if some of the parsers pass and returns the corresponding value
+</p></div><dl class="paramcmts block"><dt class="param">ps</dt><dd class="cmt"><p>sequence of parsers</p></dd></dl></div>
+    </li><li name="es.weso.rdf.parser.RDFParser#stringFromPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="stringFromPredicate(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[String]"></a>
       <a id="stringFromPredicate(IRI):RDFParser[String]"></a>
       <h4 class="signature">
@@ -723,7 +730,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns the String associated with a predicate <code>p</code></p><div class="fullcomment"><div class="comment cmt"><p>Returns the String associated with a predicate <code>p</code></p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>predicate</p></dd><dt>returns</dt><dd class="cmt"><p>An RDFParser that returns the String associate with that predicate</p></dd></dl></div>
     </li><li name="es.weso.rdf.parser.RDFParser#stringFromPredicateOptional" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="stringFromPredicateOptional(p:es.weso.rdf.nodes.IRI):RDFParser.this.RDFParser[Option[String]]"></a>
       <a id="stringFromPredicateOptional(IRI):RDFParser[Option[String]]"></a>
@@ -740,7 +747,7 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt"></p>
     </li><li name="es.weso.rdf.parser.RDFParser#subjectsFromTriples" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="subjectsFromTriples(triples:Set[es.weso.rdf.triples.RDFTriple]):Set[es.weso.rdf.nodes.RDFNode]"></a>
       <a id="subjectsFromTriples(Set[RDFTriple]):Set[RDFNode]"></a>
